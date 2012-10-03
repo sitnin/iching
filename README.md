@@ -2,6 +2,12 @@
 
 This is a static c/c++ library for calculation birth/core/end hexagram numbers.
 
+## Known problems
+
+Ubuntu 12.04.1 LTS node.js package seems not to have a node-gyp, so it must be installed prior to the library
+
+`sudo npm install -g node-gyp`
+
 ## References
 
 Read this [Livejournal post](http://fima-psuchopadt.livejournal.com/1294476.html) (in russian) for the explanation.

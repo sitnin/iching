@@ -17,13 +17,12 @@ check:
 
 lib: prepare
 	@echo "Compiling library"
-	gcc -c src/iching.c -o build/iching.o -I include
+	gcc -c src/iching.c -o build/iching.o -I include -fPIC
 	ar rcs build/libiching.a build/iching.o
 	rm build/iching.o
 
 node: clean lib
-	node-gyp configure
-	node-gyp build
+	node-gyp configure build
 
 tests: prepare
 	@echo "Compiling tests"

@@ -1,0 +1,25 @@
+{
+   "name": "iching",
+   "version": "1.0.0-3",
+   "main":"./build/Release/iching",
+   "description": "A c/c++ library for calculation birth/core/end hexagram numbers",
+   "author": {
+       "name": "Gregory Sitnin",
+       "email": "greg@sitnin.com",
+       "web": "http://sitnin.com",
+       "twitter": "sitnin"
+   },
+   "license": {
+       "type": "MIT"
+   },
+   "repository": {
+       "type": "git",
+       "url": "http://github.com/sitnin/iching.git"
+   },
+   "engines": [
+        "0.8"
+   ],
+   "scripts": {
+       "install": "make node"
+   }
+}
