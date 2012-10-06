@@ -2,6 +2,8 @@
 
 This is a static c/c++ library for calculation birth/core/end hexagram numbers.
 
+[![Build Status](https://secure.travis-ci.org/sitnin/iching.png)](http://travis-ci.org/sitnin/iching)
+
 ## Node.JS
 
 This library tested in node.js 0.8.9 and 0.8.11.
