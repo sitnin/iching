@@ -14,15 +14,13 @@ You can install the library via npm:
 
 `npm install iching`
 
-### Known problems
+### Prerequisites
 
-Ubuntu 12.04.1 LTS node.js package seems not to have a node-gyp, so it must be installed prior to the library
-
-`sudo npm install -g node-gyp`
+You should have `node-gyp` and `c++ compiler` (gcc or clang) installed.
 
 ## References
 
-Read this [Livejournal post](http://fima-psuchopadt.livejournal.com/1294476.html) (in russian) for the explanation.
+Read this [Livejournal post](http://fima-psuchopadt.livejournal.com/1294476.html) (in russian) for the explanation (about I-Ching).
 
 ## Examples
 
