@@ -6,7 +6,7 @@ This is a static c/c++ library for calculation birth/core/end hexagram numbers.
 
 ## Node.JS
 
-This library tested in node.js 0.8.9 and 0.8.11.
+This library works with Node.js 0.8.x and 0.10.x.
 
 Maybe it works with the 0.6. If it so, please, let me know.
 
