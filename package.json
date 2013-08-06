@@ -17,7 +17,7 @@
        "url": "http://github.com/sitnin/iching.git"
    },
    "engines": [
-        "0.8"
+        "0.8", "0.10"
    ],
    "scripts": {
        "install": "make node"
