@@ -4,16 +4,12 @@ all: clean lib tests
 	@echo "All done"
 
 prepare:
-	# @echo "Making empty build/ directory"
+	# @echo "Make an empty build/ directory"
 	mkdir -p build
 
 clean:
-	# @echo "Deleting build/ directory"
+	# @echo "Delete build/ directory"
 	rm -rf build
-
-check:
-	build/test
-	build/testcpp
 
 lib: prepare
 	@echo "Compiling library"
@@ -21,10 +17,19 @@ lib: prepare
 	ar rcs build/libiching.a build/iching.o
 	rm build/iching.o
 
-node: clean lib
-	node-gyp configure build
-
-tests: prepare
+build-tests: prepare
 	@echo "Compiling tests"
 	gcc tests/test.c -Lbuild/ -liching -o build/test -I include
 	g++ tests/test.cc -Lbuild/ -liching -o build/testcpp -I include
+
+test: build-tests
+	build/test
+	build/testcpp
+
+node-lib: lib
+	node-gyp configure build
+
+node-test:
+	node tests/test.js
+
+node: clean node-lib node-test

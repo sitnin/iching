@@ -1,6 +1,6 @@
 {
    "name": "iching",
-   "version": "1.0.0-3",
+   "version": "1.0.0-4",
    "main":"./build/Release/iching",
    "description": "A c/c++ library for calculation birth/core/end hexagram numbers",
    "author": {
@@ -20,6 +20,7 @@
         "0.8", "0.10"
    ],
    "scripts": {
-       "install": "make node"
+       "install": "make node",
+       "test": "make node-test"
    }
 }
