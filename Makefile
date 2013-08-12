@@ -17,7 +17,7 @@ lib: prepare
 	ar rcs build/libiching.a build/iching.o
 	rm build/iching.o
 
-build-tests: prepare
+build-tests: lib
 	@echo "Compiling tests"
 	gcc tests/test.c -Lbuild/ -liching -o build/test -I include
 	g++ tests/test.cc -Lbuild/ -liching -o build/testcpp -I include
@@ -34,4 +34,4 @@ node-test:
 
 node: clean node-lib node-test
 
-check: node
+check: test
