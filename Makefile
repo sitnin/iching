@@ -33,3 +33,5 @@ node-test:
 	node tests/test.js
 
 node: clean node-lib node-test
+
+check: node
